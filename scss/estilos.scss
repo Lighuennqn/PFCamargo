@@ -36,16 +36,20 @@ a {
 
 }
 
-main {
-    background: linear-gradient(to left, #A76F6F, #A76F6F, #A76F6F, #EAB2A0);
+/* mixin */
+@mixin gradient-background($color1, $color2) {
+    background: linear-gradient(to left, $color1, $color2);
     border-style: ridge;
     border-radius: 14px;
-    border-color: #EAB2A0;
+    border-color: $color2;
+}
+
+main {
+    @include gradient-background(#A76F6F, #EAB2A0);
     justify-content: center;
 }
 
 h2 {
-    font-family: 'Ubuntu', sans-serif;
     font-style: italic;
     font-size: 30px;
     text-align: center;
@@ -100,17 +104,22 @@ footer {
     padding: 10px;
 }
 
-.guasap{
+.guasap {
     border-radius: 10px;
     background-color: #371B58;
     color: #fafafa;
-    
-    }
+}
+
 
 /* Sección Contacto */
-label {
+// EXTEND
+.label-comun {
     margin: 10px;
     display: block;
+}
+
+.label-contacto {
+    @extend .label-comun;
 }
 
 h3 {
@@ -120,9 +129,10 @@ h3 {
     text-align: center;
 }
 
-input {
-    display: block;
+.label-input {
+    @extend .label-comun;
 }
+
 
 /* Seccion Especimenes */
 
@@ -148,9 +158,6 @@ input {
     padding: 10px;
     margin: 10px;
     color: #fff;
-    background: linear-gradient(to left, #A76F6F, #A76F6F, #A76F6F, #EAB2A0);
-    border-style: ridge;
-    border-radius: 14px;
-    border-color: #4a235a;
+   @include gradient-background(#A76F6F, #EAB2A0);
     font-size: 20px;
 }
