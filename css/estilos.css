@@ -3,11 +3,9 @@
 body {
   background-color: rgb(144, 200, 223);
   font-family: "Lato", sans-serif;
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-
-h1 {
+body h1 {
   text-align: center;
   color: blueviolet;
   background-color: rgb(192, 142, 199);
@@ -22,7 +20,7 @@ h1 {
 }
 
 .letra {
-  font-size: 0, 5rem;
+  font-size: 0.5rem;
   padding-left: 2rem;
   text-transform: capitalize;
 }
@@ -35,51 +33,40 @@ a {
   font-size: 20px;
 }
 
+/* mixin */
 main {
-  background: linear-gradient(to left, #A76F6F, #A76F6F, #A76F6F, #EAB2A0);
+  background: linear-gradient(to left, #A76F6F, #EAB2A0);
   border-style: ridge;
   border-radius: 14px;
   border-color: #EAB2A0;
   justify-content: center;
 }
-
-h2 {
-  font-family: "Ubuntu", sans-serif;
-  font-style: italic;
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.zeus {
+main .zeus {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
 }
-
-.apoloChan {
+main .apoloChan {
   width: 60%;
   margin-left: 20%;
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: center;
 }
-
 @keyframes foto {
   0% {
     opacity: 0;
   }
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
 }
-.anime {
+main .anime {
   animation-name: foto;
   animation-duration: 5s;
   animation-iteration-count: 2;
 }
-
-.apoloKun {
+main .apoloKun {
   width: 20%;
   margin-left: 40%;
   padding-top: 2%;
@@ -97,15 +84,14 @@ footer {
   justify-content: space-between;
   padding: 10px;
 }
-
-.guasap {
+footer .guasap {
   border-radius: 10px;
   background-color: #371B58;
   color: #fafafa;
 }
 
 /* Sección Contacto */
-label {
+.label-comun, .label-input, .label-contacto {
   margin: 10px;
   display: block;
 }
@@ -115,10 +101,6 @@ h3 {
   color: rgb(44, 44, 102);
   font-style: italic;
   text-align: center;
-}
-
-input {
-  display: block;
 }
 
 /* Seccion Especimenes */
@@ -144,11 +126,24 @@ input {
   padding: 10px;
   margin: 10px;
   color: #fff;
-  background: linear-gradient(to left, #A76F6F, #A76F6F, #A76F6F, #EAB2A0);
+  background: linear-gradient(to left, #A76F6F, #EAB2A0);
   border-style: ridge;
   border-radius: 14px;
-  border-color: #4a235a;
+  border-color: #EAB2A0;
   font-size: 20px;
+}
+
+.imagenes {
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+.peces {
+  width: 70%;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
