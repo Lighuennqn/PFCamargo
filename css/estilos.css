@@ -1,58 +1,60 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100&display=swap");
 body {
-  background-color: rgb(144, 200, 223);
-  font-family: "Lato", sans-serif;
+  background: linear-gradient(to left, #0B2447, #576CBC, #576CBC, #576CBC);
+  font-family: "#Lato", "sans-serif";
   font-weight: bold;
 }
 body h1 {
   text-align: center;
-  color: blueviolet;
-  background-color: rgb(192, 142, 199);
+  color: #fafafa;
+  background-color: #19376D;
   border-style: ridge;
   border-radius: 14px;
-  border-color: blueviolet;
-  font-size: 40px;
+  border-color: #576CBC;
+  font-size: 30px;
 }
 
 .frodo {
   width: 5rem;
 }
 
-.letra {
-  font-size: 0.5rem;
+.navbar a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1rem;
   padding-left: 2rem;
   text-transform: capitalize;
-}
-
-a {
-  text-decoration: none;
-  font: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
-  font-size: 20px;
+  font-weight: bold;
 }
 
 /* mixin */
-main {
-  background: linear-gradient(to left, #A76F6F, #EAB2A0);
+.zeus {
+  background: linear-gradient(to left, #576CBC, #A5D7E8);
   border-style: ridge;
   border-radius: 14px;
-  border-color: #EAB2A0;
-  justify-content: center;
-}
-main .zeus {
+  border-color: #A5D7E8;
+  padding: 50px;
+  margin: 50px;
   font-size: 20px;
-  font-weight: bold;
-  text-align: center;
+  text-align: justify;
+  color: #0B2447;
+  font-style: italic;
 }
-main .apoloChan {
-  width: 60%;
-  margin-left: 20%;
+
+.shoQueSe {
+  color: bisque;
+  text-align: justify;
+}
+
+.apoloChan {
+  width: 50%;
+  margin-left: 25%;
   padding-top: 2%;
   padding-bottom: 2%;
   text-align: center;
 }
+
 @keyframes foto {
   0% {
     opacity: 0;
@@ -61,12 +63,13 @@ main .apoloChan {
     opacity: 1;
   }
 }
-main .anime {
+.anime {
   animation-name: foto;
   animation-duration: 5s;
   animation-iteration-count: 2;
 }
-main .apoloKun {
+
+.apoloKun {
   width: 20%;
   margin-left: 40%;
   padding-top: 2%;
@@ -88,19 +91,58 @@ footer .guasap {
   border-radius: 10px;
   background-color: #371B58;
   color: #fafafa;
+  font-weight: bold;
 }
 
 /* Sección Contacto */
-.label-comun, .label-input, .label-contacto {
-  margin: 10px;
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 800px;
+  margin: 0 auto;
+  color: #fafafa;
+}
+
+encabezado, h4, h3, legend {
+  font-weight: bold;
+  color: #0B2447;
+  font-style: italic;
+  text-align: center;
+}
+
+.label-comun, .label-contacto {
+  margin-top: 10px;
   display: block;
 }
 
-h3 {
-  font-weight: bold;
-  color: rgb(44, 44, 102);
-  font-style: italic;
-  text-align: center;
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #fafafa;
+}
+
+.boton {
+  margin-top: 10px;
+  background-color: #0B2447;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #A5D7E8;
+}
+
+iframe {
+  width: 100%;
+  height: 380px;
 }
 
 /* Seccion Especimenes */
@@ -114,22 +156,27 @@ h3 {
   margin: 0 auto;
   width: 90%;
   border-radius: 20px;
-  background-color: #9a5eb3;
+  background-color: #A5D7E8;
   border: solid black 1px;
   margin: 10px;
   padding: 10px;
-  box-shadow: 10px 10px grey;
+  box-shadow: 10px 10px #0B2447;
+}
+
+.card-img {
+  width: 100%;
+  padding: 10%;
 }
 
 .pieEnlace {
-  text-align: left;
-  padding: 10px;
-  margin: 10px;
-  color: #fff;
-  background: linear-gradient(to left, #A76F6F, #EAB2A0);
+  text-align: center;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #0B2447;
+  background: linear-gradient(to left, #576CBC, #A5D7E8);
   border-style: ridge;
   border-radius: 14px;
-  border-color: #EAB2A0;
+  border-color: #A5D7E8;
   font-size: 20px;
 }
 
@@ -144,6 +191,74 @@ h3 {
   height: 90%;
   border: 2px solid black;
   border-radius: 20px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+  color: #0B2447;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background: linear-gradient(to left, #4477CE, #A5D7E8);
+  border-style: ridge;
+  border-radius: 14px;
+  border-color: #A5D7E8;
+  color: #333;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #0B2447;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+}
+.tarjeta .imagenn {
+  object-fit: cover;
+  width: 100%;
+  height: 30%;
+  border: solid #0B2447 1.5px;
+}
+.tarjeta .precio {
+  font-size: 30px;
+  color: #0B2447;
+  font-weight: bold;
+}
+.tarjeta .btn-precio {
+  background: #19376D;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.tarjeta .btn-precio:hover {
+  background: #A5D7E8;
+  color: black;
+}
+@media (max-width: 1070px) {
+  .tarjeta .columna {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .tarjeta .columna {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

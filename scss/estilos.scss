@@ -1,38 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100&display=swap');
 
 body {
-    background-color: rgb(144, 200, 223);
-    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to left, #0B2447, #576CBC, #576CBC, #576CBC);
+    // background-color: #0B2447;
+    font-family: '#Lato', 'sans-serif';
     font-weight: bold;
 
 
-h1 {
-    text-align: center;
-    color: blueviolet;
-    background-color: rgb(192, 142, 199);
-    border-style: ridge;
-    border-radius: 14px;
-    border-color: blueviolet;
-    font-size: 40px;
-}
+    h1 {
+        text-align: center;
+        color: #fafafa;
+        background-color: #19376D;
+        border-style: ridge;
+        border-radius: 14px;
+        border-color: #576CBC;
+        font-size: 30px;
+    }
 }
 
 .frodo {
     width: 5rem;
 }
 
-.letra {
-    font-size: 0.5rem;
+.navbar a {
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 1rem;
     padding-left: 2rem;
     text-transform: capitalize;
-}
-
-a {
-    text-decoration: none;
-    font: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    font-size: 20px;
+    font-weight: bold;
 
 }
 
@@ -44,32 +40,37 @@ a {
     border-color: $color2;
 }
 
-main {
-    @include gradient-background(#A76F6F, #EAB2A0);
-    justify-content: center;
-
-
-
 .zeus {
+    @include gradient-background(#576CBC, #A5D7E8);
+    padding: 50px;
+    margin: 50px;
     font-size: 20px;
-    font-weight: bold;
-    text-align: center;
+    text-align: justify;
+    color: #0B2447;
+    font-style: italic;
+
+}
+
+.shoQueSe {
+    color: bisque;
+    text-align: justify;
+
 }
 
 .apoloChan {
-    width: 60%;
-    margin-left: 20%;
+    width: 50%;
+    margin-left: 25%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
 }
 
-@keyframes foto{
-    0%{
+@keyframes foto {
+    0% {
         opacity: 0;
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
 }
@@ -79,6 +80,7 @@ main {
     animation-duration: 5s;
     animation-iteration-count: 2;
 }
+
 .apoloKun {
     width: 20%;
     margin-left: 40%;
@@ -86,7 +88,7 @@ main {
     padding-bottom: 2%;
     text-align: center;
 }
-}
+
 
 footer {
     display: flex;
@@ -99,18 +101,39 @@ footer {
     padding: 10px;
 
 
-.guasap {
-    border-radius: 10px;
-    background-color: #371B58;
-    color: #fafafa;
-}
+    .guasap {
+        border-radius: 10px;
+        background-color: #371B58;
+        color: #fafafa;
+        font-weight: bold;
+    }
 }
 
 
 /* Sección Contacto */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 800px;
+    margin: 0 auto;
+    color: #fafafa;
+  }
 // EXTEND
+encabezado {
+    font-weight: bold;
+    color: #0B2447;
+    font-style: italic;
+    text-align: center;
+}
+
+h3, legend {
+    @extend encabezado;
+}
+
+
 .label-comun {
-    margin: 10px;
+    margin-top: 10px;
     display: block;
 }
 
@@ -118,16 +141,36 @@ footer {
     @extend .label-comun;
 }
 
-h3 {
-    font-weight: bold;
-    color: rgb(44, 44, 102);
-    font-style: italic;
-    text-align: center;
+input ,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #fafafa;
 }
 
-.label-input {
-    @extend .label-comun;
+
+.boton {
+  margin-top: 10px;
+  background-color: #0B2447;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
+
+.boton:hover {
+  background-color: #A5D7E8;
+}
+
+
+iframe {
+        width: 100%;
+        height: 380px;
+      }
 
 
 /* Seccion Especimenes */
@@ -142,19 +185,30 @@ h3 {
     margin: 0 auto;
     width: 90%;
     border-radius: 20px;
-    background-color: #9a5eb3;
+    background-color: #A5D7E8;
     border: solid black 1px;
     margin: 10px;
     padding: 10px;
-    box-shadow: 10px 10px grey;
+    box-shadow: 10px 10px #0B2447;
+}
+
+.card-img{
+    width: 100%;
+    padding: 10%;
+
+}
+
+h4 {
+    @extend encabezado;
+    
 }
 
 .pieEnlace {
-    text-align: left;
-    padding: 10px;
-    margin: 10px;
-    color: #fff;
-   @include gradient-background(#A76F6F, #EAB2A0);
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #0B2447;
+    @include gradient-background(#576CBC, #A5D7E8);
     font-size: 20px;
 }
 
@@ -171,4 +225,72 @@ h3 {
     height: 90%;
     border: 2px solid black;
     border-radius: 20px;
+}
+
+// sección Galería
+h2{
+    font-weight: 400;
+}
+p{
+    font-weight: 300;
+    color: #0B2447;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tarjeta{
+    @include gradient-background(#4477CE, #A5D7E8);
+    color: #333;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #0B2447;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+
+    .imagenn{
+        object-fit:cover;
+        width: 100%;
+        height: 30%;
+        border: solid #0B2447 1.5px;
+}
+    
+
+.precio {
+    font-size: 30px;
+    color: #0B2447;
+    font-weight: bold;
+
+}
+.btn-precio {
+    background: #19376D;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.btn-precio:hover {
+    background: #A5D7E8;
+    color: black;
+}
+@media (max-width: 1070px) {
+    .columna {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 }
