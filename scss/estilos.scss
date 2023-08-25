@@ -42,13 +42,16 @@ body {
 
 .zeus {
     @include gradient-background(#576CBC, #A5D7E8);
-    padding: 50px;
-    margin: 50px;
-    font-size: 20px;
+    padding: 30px;
+    font-size: 18px;
     text-align: justify;
     color: #0B2447;
     font-style: italic;
 
+
+@media (max-width: 768px) {
+    padding: 20%;
+    font-size: 18px;}
 }
 
 .shoQueSe {
@@ -110,77 +113,6 @@ footer {
 }
 
 
-/* Sección Contacto */
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #fafafa;
-  }
-// EXTEND
-encabezado {
-    font-weight: bold;
-    color: #0B2447;
-    font-style: italic;
-    text-align: center;
-}
-
-h3, legend {
-    @extend encabezado;
-}
-
-
-.label-comun {
-    margin-top: 10px;
-    display: block;
-}
-
-.label-contacto {
-    @extend .label-comun;
-}
-
-input ,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  color: #fafafa;
-}
-
-.map-container iframe{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-    overflow: hidden; 
-    width: 100%;
-    height: 100%;
-}
-  
-
-.boton {
-  margin-top: 10px;
-  background-color: #0B2447;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.boton:hover {
-  background-color: #A5D7E8;
-}
-
-
-iframe {
-        max-width: 100%;
-        height: 380px;
-      }
 
 
 /* Seccion Especimenes */
@@ -235,19 +167,114 @@ h4 {
     font-size: 20px;
 }
 
+/* Sección Contacto */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+        
+  }
+// EXTEND
+encabezado {
+    font-weight: bold;
+    color: #0B2447;
+    font-style: italic;
+    text-align: center;
+}
+
+h3, legend {
+    @extend encabezado;
+}
+
+
+.label-comun {
+    margin-top: 10px;
+    display: block;
+    
+}
+
+.label-contacto {
+    @extend .label-comun;
+    
+}
+
+.letras{
+    color: #0B2447;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  border-color: #0B2447;
+  color: #black;
+  }
+
+.map-container iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    overflow: hidden; 
+    width: 100%;
+    height: 100%;
+}
+  
+
+.boton {
+  margin-top: 10px;
+  background-color: #0B2447;
+  color: #fafafa;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #A5D7E8;
+  color: #0B2447;
+}
+
+
+iframe {
+        max-width: 100%;
+        height: 380px;
+      }
+
+
 // sección quienes somos
 
 .imagenes {
     font-style: italic;
     text-align: center;
     font-weight: bold;
+    margin-top: 20px;
+}
+.fotos .col-md-6{
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: column;
+    // justify-content: center;
+    // gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .peces {
-    width: 70%;
-    height: 90%;
+    // width: 70%;
+    // height: 90%;
+    max-width: 100%;
     border: 2px solid black;
     border-radius: 20px;
+    // display: block;
+    // margin: 0 auto;
 }
 
 // sección Galería
