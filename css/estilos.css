@@ -268,13 +268,13 @@ p {
   color: black;
 }
 @media (max-width: 1070px) {
-  .tarjeta .columna {
+  .tarjeta .tarjeta {
     width: 45%;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) {
-  .tarjeta .columna {
+  .tarjeta .tarjeta {
     width: 100%;
     margin-bottom: 20px;
   }
