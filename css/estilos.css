@@ -243,18 +243,21 @@ p {
   width: calc(25% - 20px);
   box-sizing: border-box;
 }
+
 .tarjeta .imagenn {
   object-fit: cover;
   width: 100%;
   height: 30%;
   border: solid #0B2447 1.5px;
 }
-.tarjeta .precio {
+
+.precio {
   font-size: 30px;
   color: #0B2447;
   font-weight: bold;
 }
-.tarjeta .btn-precio {
+
+.btn-precio {
   background: #19376D;
   display: block;
   padding: 10px;
@@ -263,18 +266,20 @@ p {
   border-radius: 3px;
   margin-bottom: 10px;
 }
-.tarjeta .btn-precio:hover {
+
+.btn-precio:hover {
   background: #A5D7E8;
   color: black;
 }
+
 @media (max-width: 1070px) {
-  .tarjeta .tarjeta {
+  .tarjeta {
     width: 45%;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 600px) {
-  .tarjeta .tarjeta {
+  .tarjeta {
     width: 100%;
     margin-bottom: 20px;
   }
