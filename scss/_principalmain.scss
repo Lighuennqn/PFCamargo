@@ -1,0 +1,74 @@
+body {
+    background: linear-gradient(to left, $color-azul-oscuro, $color-celeste, $color-celeste, $color-celeste);
+    font-family: $fuente-principal;
+    font-weight: lighter;
+
+
+
+    h1 {
+        text-align: center;
+        color: #fafafa;
+        background-color: $color-azul;
+        border-style: ridge;
+        border-radius: 14px;
+        border-color: $color-celeste;
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.zeus {
+    @include gradient-background($color-celeste, $color-celeste-claro);
+    padding: 30px;
+    font-size: 18px;
+    text-align: justify;
+    color: $color-azul-oscuro;
+    font-style: italic;
+
+
+    @media (max-width: 768px) {
+        padding: 20%;
+        font-size: 18px;
+    }
+}
+
+.shoQueSe {
+    color: bisque;
+    text-align: justify;
+
+}
+
+.apoloChan {
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+@keyframes foto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.anime {
+    animation-name: foto;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+}
+
+.apoloKun {
+    width: 20%;
+    margin-left: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}

@@ -1,0 +1,57 @@
+/* Seccion Especimenes */
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.lola {
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 20px;
+    background-color: $color-celeste-claro;
+    border: solid black 1px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px $color-azul-oscuro;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lola {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+encabezado {
+    font-weight: bold;
+    color: #0B2447;
+    font-style: italic;
+    text-align: center;
+}
+h4 {
+    @extend encabezado;
+
+}
+
+.pieEnlace {
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: $color-azul-oscuro;
+    @include gradient-background($color-celeste, $color-celeste-claro);
+    font-size: 20px;
+}

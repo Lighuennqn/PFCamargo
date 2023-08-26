@@ -1,9 +1,198 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@100&display=swap");
+.frodo {
+  width: 5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 1rem;
+  padding-left: 2rem;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+
+/* mixin */
+/* Seccion Especimenes */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.lola {
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 20px;
+  background-color: #A5D7E8;
+  border: solid black 1px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px #0B2447;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lola {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+encabezado, h3,
+legend, h4 {
+  font-weight: bold;
+  color: #0B2447;
+  font-style: italic;
+  text-align: center;
+}
+
+.pieEnlace {
+  text-align: center;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #0B2447;
+  background: linear-gradient(to left, #576CBC, #A5D7E8);
+  border-style: ridge;
+  border-radius: 14px;
+  border-color: #A5D7E8;
+  font-size: 20px;
+}
+
+.imagenes {
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.fotos .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.peces {
+  max-width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: auto;
+  color: #0B2447;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta {
+  background: linear-gradient(to left, #4477CE, #A5D7E8);
+  border-style: ridge;
+  border-radius: 14px;
+  border-color: #A5D7E8;
+  color: #333;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #0B2447;
+  width: calc(25% - 20px);
+  box-sizing: border-box;
+  height: 150vh;
+}
+
+.textoTarjeta {
+  height: 52%;
+  font-size: 15px;
+}
+
+.imagenTarjeta {
+  height: 40%;
+}
+.imagenTarjeta .imagenn {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.botonTarjeta {
+  position: relative;
+  bottom: 1px;
+}
+
+.precio {
+  font-size: 30px;
+  color: #0B2447;
+  font-weight: bold;
+}
+
+.btn-precio {
+  background: #19376D;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.btn-precio:hover {
+  background: #A5D7E8;
+  color: black;
+}
+
+@media (max-width: 1070px) {
+  .tarjeta {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .tarjeta {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+footer {
+  display: flex;
+  font-size: 16px;
+  text-align: left;
+  font-style: italic;
+  color: black;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer .guasap {
+  border-radius: 10px;
+  background-color: #371B58;
+  color: #fafafa;
+  font-weight: bold;
+}
+
 body {
   background: linear-gradient(to left, #0B2447, #576CBC, #576CBC, #576CBC);
-  font-family: "#Lato", "sans-serif";
-  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
 }
 body h1 {
   text-align: center;
@@ -15,20 +204,6 @@ body h1 {
   font-size: 30px;
 }
 
-.frodo {
-  width: 5rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fafafa;
-  font-size: 1rem;
-  padding-left: 2rem;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-
-/* mixin */
 .zeus {
   background: linear-gradient(to left, #576CBC, #A5D7E8);
   border-style: ridge;
@@ -82,67 +257,6 @@ body h1 {
   text-align: center;
 }
 
-footer {
-  display: flex;
-  font-size: 16px;
-  text-align: left;
-  font-style: italic;
-  color: black;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-footer .guasap {
-  border-radius: 10px;
-  background-color: #371B58;
-  color: #fafafa;
-  font-weight: bold;
-}
-
-/* Seccion Especimenes */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-.lola {
-  margin: 0 auto;
-  width: 90%;
-  border-radius: 20px;
-  background-color: #A5D7E8;
-  border: solid black 1px;
-  margin: 10px;
-  padding: 10px;
-  box-shadow: 10px 10px #0B2447;
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .lola {
-    width: 100%;
-    margin: 10px 0;
-  }
-}
-.pieEnlace {
-  text-align: center;
-  padding-left: 20px;
-  margin-top: 10px;
-  color: #0B2447;
-  background: linear-gradient(to left, #576CBC, #A5D7E8);
-  border-style: ridge;
-  border-radius: 14px;
-  border-color: #A5D7E8;
-  font-size: 20px;
-}
-
 /* Sección Contacto */
 fieldset {
   border: 1px solid #ccc;
@@ -152,7 +266,9 @@ fieldset {
   margin: 0 auto;
 }
 
-encabezado, h3, legend, h4 {
+/*EXTEND*/
+encabezado, h3,
+legend, h4 {
   font-weight: bold;
   color: #0B2447;
   font-style: italic;
@@ -176,10 +292,10 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   border-color: #0B2447;
-  color: #black;
+  color: black;
 }
 
-.map-container iframe {
+iframe {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,6 +303,15 @@ textarea {
   overflow: hidden;
   width: 100%;
   height: 100%;
+}
+
+.titulo-ubicacion {
+  font-weight: bold;
+  color: #0B2447;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
 }
 
 .boton {
@@ -207,93 +332,6 @@ textarea {
 iframe {
   max-width: 100%;
   height: 380px;
-}
-
-.imagenes {
-  font-style: italic;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.fotos .col-md-6 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-.peces {
-  max-width: 100%;
-  border: 2px solid black;
-  border-radius: 20px;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-p {
-  font-weight: 300;
-  color: #0B2447;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.tarjeta {
-  background: linear-gradient(to left, #4477CE, #A5D7E8);
-  border-style: ridge;
-  border-radius: 14px;
-  border-color: #A5D7E8;
-  color: #333;
-  border: 1px solid #333;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 10px 10px 5px #0B2447;
-  width: calc(25% - 20px);
-  box-sizing: border-box;
-}
-
-.precio {
-  font-size: 30px;
-  color: #0B2447;
-  font-weight: bold;
-}
-
-.btn-precio {
-  background: #19376D;
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-
-.btn-precio:hover {
-  background: #A5D7E8;
-  color: black;
-}
-
-@media (max-width: 1070px) {
-  .tarjeta {
-    width: 45%;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 600px) {
-  .tarjeta {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

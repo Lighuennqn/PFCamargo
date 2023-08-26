@@ -1,0 +1,19 @@
+// FOOTER
+footer {
+    display: flex;
+    font-size: 16px;
+    text-align: left;
+    font-style: italic;
+    color: black;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+
+    .guasap {
+        border-radius: 10px;
+        background-color: $color-violeta;
+        color: #fafafa;
+        font-weight: bold;
+    }
+}

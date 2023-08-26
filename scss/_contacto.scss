@@ -1,0 +1,90 @@
+/* Sección Contacto */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+/*EXTEND*/
+encabezado {
+  font-weight: bold;
+  color: $color-azul-oscuro;
+  font-style: italic;
+  text-align: center;
+}
+h3,
+legend {
+    @extend encabezado;
+
+}
+
+
+.label-comun {
+    margin-top: 10px;
+    display: block;
+
+}
+
+.label-contacto {
+    @extend .label-comun;
+
+}
+
+.letras {
+    color: $color-azul-oscuro;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  border-color: $color-azul-oscuro;
+  color: black;
+}
+
+ iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-ubicacion{
+    font-weight: bold;
+    color: $color-azul-oscuro;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+
+.boton {
+    margin-top: 10px;
+    background-color: $color-azul-oscuro;
+    color: #fafafa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: $color-celeste-claro;
+    color: $color-azul-oscuro;
+}
+
+
+iframe {
+    max-width: 100%;
+    height: 380px;
+}
