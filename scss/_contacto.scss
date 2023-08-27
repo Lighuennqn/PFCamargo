@@ -10,11 +10,12 @@ fieldset {
 
 /*EXTEND*/
 encabezado {
-  font-weight: bold;
-  color: $color-azul-oscuro;
-  font-style: italic;
-  text-align: center;
+    font-weight: bold;
+    color: $color-azul-oscuro;
+    font-style: italic;
+    text-align: center;
 }
+
 h3,
 legend {
     @extend encabezado;
@@ -39,16 +40,16 @@ legend {
 
 input,
 textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  border-color: $color-azul-oscuro;
-  color: black;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-color: $color-azul-oscuro;
+    color: black;
 }
 
- iframe {
+iframe {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +59,7 @@ textarea {
     height: 100%;
 }
 
-.titulo-ubicacion{
+.titulo-ubicacion {
     font-weight: bold;
     color: $color-azul-oscuro;
     font-style: italic;
