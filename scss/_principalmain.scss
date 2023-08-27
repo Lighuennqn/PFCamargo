@@ -22,7 +22,7 @@ body {
 
 .zeus {
     @include gradient-background($color-celeste, $color-celeste-claro);
-    padding: 30px;
+    padding: 20px;
     font-size: 18px;
     text-align: justify;
     color: $color-azul-oscuro;
@@ -30,7 +30,7 @@ body {
 
 
     @media (max-width: 768px) {
-        padding: 20%;
+        padding: 10%;
         font-size: 18px;
     }
 }
@@ -70,5 +70,12 @@ body {
     margin-left: 40%;
     padding-top: 2%;
     padding-bottom: 2%;
+    text-align: center;
+}
+
+.neuquen{
+    width: 50%; 
+    margin-left: 25%; 
+    padding: 1% 0; 
     text-align: center;
 }

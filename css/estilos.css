@@ -87,6 +87,16 @@ legend, h4 {
   border-radius: 20px;
 }
 
+@media (max-width: 768px) {
+  .fotos .col-md-6 {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .peces {
+    border: none;
+    border-radius: 0;
+  }
+}
 h2 {
   font-weight: 400;
 }
@@ -112,31 +122,35 @@ p {
   color: #333;
   border: 1px solid #333;
   margin-bottom: 20px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #0B2447;
   width: calc(25% - 20px);
   box-sizing: border-box;
-  height: 150vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .textoTarjeta {
-  height: 52%;
   font-size: 15px;
+  flex-grow: 1;
 }
 
 .imagenTarjeta {
-  height: 40%;
+  height: 30%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .imagenTarjeta .imagenn {
-  object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .botonTarjeta {
-  position: relative;
-  bottom: 1px;
+  text-align: center;
+  padding: 10px;
 }
 
 .precio {
@@ -209,7 +223,7 @@ body h1 {
   border-style: ridge;
   border-radius: 14px;
   border-color: #A5D7E8;
-  padding: 30px;
+  padding: 20px;
   font-size: 18px;
   text-align: justify;
   color: #0B2447;
@@ -217,7 +231,7 @@ body h1 {
 }
 @media (max-width: 768px) {
   .zeus {
-    padding: 20%;
+    padding: 10%;
     font-size: 18px;
   }
 }
@@ -254,6 +268,13 @@ body h1 {
   margin-left: 40%;
   padding-top: 2%;
   padding-bottom: 2%;
+  text-align: center;
+}
+
+.neuquen {
+  width: 50%;
+  margin-left: 25%;
+  padding: 1% 0;
   text-align: center;
 }
 
