@@ -1,13 +1,29 @@
-// sección Galería
+// Página Galería
+// Principal
 h2 {
     font-weight: 400;
 }
 
+// Tarjetas
+// texto de tarjetas
 p {
     font-weight: auto;
     color: $color-azul-oscuro;
 }
 
+.textoTarjeta {
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.precio {
+    font-size: 30px;
+    color: $color-azul-oscuro;
+    font-weight: bold;
+
+}
+
+// Formato de tarjetas
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -30,11 +46,21 @@ p {
     flex-direction: column;
 }
 
-.textoTarjeta {
-    font-size: 15px;
-    flex-grow: 1;
+@media (max-width: 1070px) {
+    .tarjeta {
+        width: 45%;
+        margin-bottom: 20px;
+    }
 }
 
+@media (max-width: 600px) {
+    .tarjeta {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+// Imágenes de tarjetas
 .imagenTarjeta {
     height: 30%;
     width: 100%;
@@ -48,17 +74,11 @@ p {
     }
 }
 
+// botón de compra
 .botonTarjeta {
 
     text-align: center;
     padding: 10px;
-
-}
-
-.precio {
-    font-size: 30px;
-    color: $color-azul-oscuro;
-    font-weight: bold;
 
 }
 
@@ -75,18 +95,4 @@ p {
 .btn-precio:hover {
     background: $color-celeste-claro;
     color: black;
-}
-
-@media (max-width: 1070px) {
-    .tarjeta {
-        width: 45%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .tarjeta {
-        width: 100%;
-        margin-bottom: 20px;
-    }
 }

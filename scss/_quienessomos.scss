@@ -1,5 +1,5 @@
-// sección quienes somos
-
+// Página quienes somos
+// sección fotos
 .imagenes {
     font-style: italic;
     text-align: center;
@@ -15,6 +15,7 @@
     padding: 10px;
 }
 
+// Columna de imagen
 .peces {
 
     max-width: 100%;
@@ -26,11 +27,11 @@
 @media (max-width: 768px) {
     .fotos .col-md-6 {
         padding: 10px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 
     .peces {
-        border: none; 
+        border: none;
         border-radius: 0;
     }
 }

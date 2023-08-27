@@ -1,10 +1,10 @@
+// MAIN
 body {
     background: linear-gradient(to left, $color-azul-oscuro, $color-celeste, $color-celeste, $color-celeste);
     font-family: $fuente-principal;
     font-weight: lighter;
 
-
-
+    // Texto
     h1 {
         text-align: center;
         color: #fafafa;
@@ -15,10 +15,6 @@ body {
         font-size: 30px;
     }
 }
-
-
-
-
 
 .zeus {
     @include gradient-background($color-celeste, $color-celeste-claro);
@@ -41,6 +37,7 @@ body {
 
 }
 
+// imagenes
 .apoloChan {
     width: 50%;
     margin-left: 25%;
@@ -64,11 +61,13 @@ body {
     }
 }
 
+
 .anime {
     animation-name: foto;
     animation-duration: 5s;
     animation-iteration-count: 2;
 }
+
 
 .apoloKun {
     width: 20%;
@@ -77,15 +76,16 @@ body {
     padding-bottom: 2%;
     text-align: center;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         width: $imagen-tamano-movil;
-        margin-left: calc((100% - #{$imagen-tamano-movil}) / 2);}
+        margin-left: calc((100% - #{$imagen-tamano-movil}) / 2);
+    }
 }
 
-.neuquen{
-    width: 50%; 
-    margin-left: 25%; 
-    padding: 1% 0; 
+.neuquen {
+    width: 50%;
+    margin-left: 25%;
+    padding: 1% 0;
     text-align: center;
 
     @media (max-width: 768px) {
@@ -93,4 +93,3 @@ body {
         margin-left: calc((100% - #{$imagen-tamano-movil}) / 2);
     }
 }
-

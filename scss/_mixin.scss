@@ -1,7 +1,8 @@
-/* mixin */
+/* mixin de gradiente para tarjeta*/
 @mixin gradient-background($color1, $color2) {
     background: linear-gradient(to left, $color1, $color2);
     border-style: ridge;
     border-radius: 14px;
     border-color: $color2;
 }
+
