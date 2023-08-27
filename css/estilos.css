@@ -15,7 +15,9 @@
 
 /* mixin */
 /* Seccion Especimenes */
-carrousel .carousel-inner .card .card-img-top {
+/* carrousel*/
+/* imágenes del carrusel */
+.carousel-inner .card .card-img-top {
   width: 100%;
   height: 200px;
   height: auto;
@@ -250,6 +252,12 @@ body h1 {
   padding-bottom: 2%;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .apoloChan {
+    width: 80%;
+    margin-left: calc((100% - 80%) / 2);
+  }
+}
 
 @keyframes foto {
   0% {
@@ -272,12 +280,24 @@ body h1 {
   padding-bottom: 2%;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .apoloKun {
+    width: 80%;
+    margin-left: calc((100% - 80%) / 2);
+  }
+}
 
 .neuquen {
   width: 50%;
   margin-left: 25%;
   padding: 1% 0;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .neuquen {
+    width: 80%;
+    margin-left: calc((100% - 80%) / 2);
+  }
 }
 
 /* Sección Contacto */
